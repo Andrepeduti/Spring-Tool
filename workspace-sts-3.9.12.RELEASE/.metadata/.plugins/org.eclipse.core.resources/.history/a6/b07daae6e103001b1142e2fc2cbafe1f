@@ -1,5 +1,0 @@
-package com.teste.demo;
-
-public interface JpaRepository {
-
-}
