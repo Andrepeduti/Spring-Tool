@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="hello"/>
 <aop-project name="service-api-1-dia"/>
 <aop-project name="metodo_save"/>
+<aop-project name="ProjetoIntegradorRetaFinal"/>
 <aop-project name="teste"/>
 <aop-project name="minhaEscola"/>
 <aop-project name="minhaLojaDeGames"/>
-<aop-project name="ProjetoIntegrador"/>
+<aop-project name="myhospital"/>
 <aop-project name="blogPessoal"/>
+<aop-project name="SecurityBlog"/>
 </aop-reference-model>

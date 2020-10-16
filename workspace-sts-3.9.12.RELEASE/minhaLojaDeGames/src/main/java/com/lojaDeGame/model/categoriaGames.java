@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -16,40 +15,39 @@ public class categoriaGames {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
-	private String nome;
+	@Size(min = 5, max = 500)
+	private String categoria;
 	
-	@NotNull
-	private String login;
+	@Size(min = 10, max = 500)
+	private String tipo;
 	
-	@NotNull
-	@Size(min = 5, max = 15)
-	private String senha;
 	
+	//Getters and Setters
 	public long getId() {
 		return id;
 	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getLogin() {
-		return login;
-	}
-	public void setLogin(String login) {
-		this.login = login;
-	}
-	public String getSenha() {
-		return senha;
-	}
-	public void setSenha(String senha) {
-		this.senha = senha;
+
+	public String getCategoria() {
+		return categoria;
 	}
 
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	
+	
 	
 }
